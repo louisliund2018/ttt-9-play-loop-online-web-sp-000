@@ -37,9 +37,16 @@ def turn(board)
 end
 
 def play(board)
+<<<<<<< HEAD
   counter = 0
   while counter < 9
     turn(board)
     counter += 1
+=======
+  input = gets.strip
+  index = input_to_index(input)
+  while valid_move?(board, index) == true
+    turn(board)
+>>>>>>> 9f859f4f1e33e09f68f909d935e409045053fe73
   end
 end
